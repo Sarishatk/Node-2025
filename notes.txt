@@ -1,0 +1,88 @@
+            node js
+ -----------------------------
+  
+  1.javascript run time environmnet + js library(browser nte veliyil js file ne run cheyyan vendi ulla runtime mechanism aanu node js)
+  2.features
+   -extremely fater   -browser nte eedh engine use chyth aano compile cheyyunnath ath use aaki thenne aanu node run aavunnath
+   -aynchronous programming - first request vanna athinte reslove cheyyum  adthath vanna athine cheyyum nirthi vekkila assynchrouns aayi work cheyyum
+   -single thread -fn ne reolve cheyyann 1 tack maathram mathiii
+   -api aanel priority queue lun irikkum store aava   --- FIFO
+   -call back aanel callback queue
+   -stack empty aavumbole asyn fn ne stack lek kettuu stack empty aano nokkana aal aanu even loop
+   -priority base lu aavum stack lek entry cheyyaaa
+   -high scalable - kore no of request reslove cheyyam
+   - open source - free aanu version upgrade chythathu accesss cheyyan pattum
+   
+
+   3.Node js Global object
+   ---------------------------------
+
+-- IT CAN acces anywhere from node js app without exporting/importing
+
+   eg:console.jog
+    - set timeout
+
+4.  Node js Module Sytem
+    -Each file node js app is coniderd a eperate Module.To resuse modules we have to export / importing
+    [ each file i considered as a modle]
+    -to import    a modle :use require('modle name') method
+    -how to export a module : modle.exports/ exports keyword  
+    - build in modules 
+    ------------------
+    -fs :file system -handling file related event
+   -http  :generate http request
+   -https :generate http request
+   -events :generating events
+   -cypto :tool like encyption ,hashing
+   -process :used to provide crrently running processs information 
+        -environmental variable :ussed to store runtime valuess
+  
+  
+  5.node js packages
+    -uesd to help solving common problems
+    -collection of node_module and package.json
+    -intall package: npm intall package name
+    -create package.jsson :npm configuration file for projcet
+    -node_module  :ussed to hold copiess of insstalled packagess -git lek add cheyyanda karyam illaa node illel project worl aavillaaa
+    -package_lock.json :to hold versions of  insstalled  package
+
+
+6.backend concept
+   -client-server architectre : sending requuest and ressponse  between 2 applicationss
+   -API : (communication nu vendi usse cheyyunnath ) 
+   -Restful API : http request with jsson data
+   -CRUD :CREATE,read,update,delete 
+   -CORS -cros origin Resource sshairing -eedh url nn veruna request anu reslove cheyyan paadu ennu paraju kodkkaan  .ithor protocol anu data ssharing b/w 2 sytem ssecure aakan veendiiii
+
+
+                                              Express js
+                                       ---------------------------
+1. Frame work for reolving client erver app of Node js
+2.create a server folder
+3.create package.jon file :use npm init -y
+4.update start command as "start":"node index.js" in script of package.json
+5.install package  
+  - express :npm install express
+  -cors:npm install cors
+  -dotenv :npm i dotenv -project le environmental variables indel firt load aavan vendi aanu ith use aakkaneee
+
+6.create .env file to hold environmental variable
+7.create .gitignore to add file to ignore while adding to git
+8.create index.js file to define server
+   - import .env file
+   -import express
+   -create express server
+   - use following in server  
+      -cors 
+      -parser for json
+
+   -customize port to listen http request 
+  9 -create router folder  
+      -create router.js file
+           -import express
+           -create router object of express to define path
+           -using router object define path
+           -to define logic to rteslove http request redirect in to its controller
+10. create controller folder in server to define logic to slove api 
+        -create controller.js file
+        -
